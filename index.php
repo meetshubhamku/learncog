@@ -9,6 +9,13 @@ include "./db.php";
     $row = $result->fetch_assoc();
     $course_count = $row['course_count'];
   }
+  $sql = "select count(*) as user_count from users";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) 
+  {
+    $row = $result->fetch_assoc();
+    $user_count = $row['user_count'];
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +30,7 @@ include "./db.php";
 
     <!-- Landing section -->
     <div class="container-fluid pt-5 back-gradient">
-      <div class="container py-5 ">
+      <div class="container py-5">
         <div class="row">
           <div class="col lg-6 col-md-6 col-sm-12 text-white py-5 px-5 d-flex flex-column justify-content-center">
             <div>
@@ -64,15 +71,15 @@ include "./db.php";
     
     <!-- Course section -->
     <div class="container fluid">
-      <h6 class="text-center my-2 text-gradient letter-space-2">< Why LearnCog > </h6>
+      <h6 class="text-center mt-3 mb-2 text-red letter-space-2">< Why LearnCog > </h6>
       <h4 class="text-center my-2 font-weight-bold letter-space-2">Clear, Concise, Comprehensive, and Practical with No Fluff!</h4>
       <div class="container mt-5 pt-2">
 
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-12 mx-auto order-1 text-lg-right d-flex flex-column justify-content-center">
-            <h6 class="text-gradient">STEP-BY-STEP LESSONS</h6>
+            <h6 class="text-red">STEP-BY-STEP LESSONS</h6>
             <h4 class="font-weight-bold">Simple and Beginner friendly</h4>
-            <p>Time and time again, Mosh's students praise his ability to break down complex topics into simple, digestible lessons that anyone can understand.</p>
+            <p class="text-muted">Time and time again, Mosh's students praise his ability to break down complex topics into simple, digestible lessons that anyone can understand.</p>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 order-sm-1 mx-auto">
            <img src="./assets/simple.png" alt="">
@@ -84,17 +91,17 @@ include "./db.php";
            <img src="./assets/concise.png" alt="">
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 mx-auto text-lg-left d-flex flex-column justify-content-center">
-            <h6 class="text-gradient">FAST-TRACK YOUR LEARNING</h6>
+            <h6 class="text-red">FAST-TRACK YOUR LEARNING</h6>
             <h4 class="font-weight-bold">Clear and Concise Lessons</h4>
-            <p>Don't waste any more time on long, repetitive, and poorly-structured courses. Mosh's lessons are concise, right to the point, and free of rambling and unnecessary buzzwords. Everything explained in plain English.</p>
+            <p class="text-muted">Don't waste any more time on long, repetitive, and poorly-structured courses. Mosh's lessons are concise, right to the point, and free of rambling and unnecessary buzzwords. Everything explained in plain English.</p>
           </div>
         </div>
 
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-12 order-1 mx-auto text-lg-right d-flex flex-column justify-content-center">
-            <h6 class="text-gradient">MASTER A TOP CODER MINDSET</h6>
+            <h6 class="text-red">MASTER A TOP CODER MINDSET</h6>
             <h4 class="font-weight-bold">Learn from a True Expert</h4>
-            <p>Benefit from Mosh's two decades of experience in the industry. Not only does he explain the whats, whys, and hows, he also shares tons of tips and tricks that help you code faster and with more confidence. Something that would take you years to learn on the job.</p>
+            <p class="text-muted">Benefit from Mosh's two decades of experience in the industry. Not only does he explain the whats, whys, and hows, he also shares tons of tips and tricks that help you code faster and with more confidence. Something that would take you years to learn on the job.</p>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 order-sm-1 mx-auto">
            <img src="./assets/tech.png" alt="">
@@ -106,31 +113,22 @@ include "./db.php";
            <img src="./assets/lesson.png" alt="">
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 mx-auto text-lg-left d-flex flex-column justify-content-center">
-            <h6 class="text-gradient">Fun and Engaging Lessons</h6>
+            <h6 class="text-red">Fun and Engaging Lessons</h6>
             <h4 class="font-weight-bold">Clear and Concise Lessons</h4>
-            <p>Shubham is a perfectionist and is fully obsessed with the quality of his videos. Beautiful graphics, slides, and animations help you stay focused, remember, and better understand the materials.</p>
+            <p class="text-muted">Shubham is a perfectionist and is fully obsessed with the quality of his videos. Beautiful graphics, slides, and animations help you stay focused, remember, and better understand the materials.</p>
           </div>
         </div>
 
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-12 order-1 mx-auto text-lg-right d-flex flex-column justify-content-center">
-            <h6 class="text-gradient">BOOST YOUR CAREER OPTIONS</h6>
+            <h6 class="text-red">BOOST YOUR CAREER OPTIONS</h6>
             <h4 class="font-weight-bold">Prepare for Jobs and Interviews</h4>
-            <p>Shubham perfectly organized, in-depth, and comprehensive courses are packed with real-world examples and exercises that prepare you for the job.</p>
+            <p class="text-muted">Shubham perfectly organized, in-depth, and comprehensive courses are packed with real-world examples and exercises that prepare you for the job.</p>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 order-sm-1 mx-auto">
            <img src="./assets/job.png" alt="">
           </div>
         </div>
-
-       
-
-
-       
-
-
-      
-        
       </div>
     </div>
 
@@ -139,10 +137,10 @@ include "./db.php";
       <div class="container pt-5 ">
         <div class="row">
           <div class="col lg-12 col-md-12 col-sm-12 py-5 px-5 ">
-            <h1 style="font-size: 4rem;" class="text-center font-weight-bold">
-            The Future That You Will See Soon
+            <p class="text-center text-red letter-space-2"> < Hello World > </p>
+            <h1 style="font-size: 4rem;" class="text-center font-weight-bold mb-4">
+              The Future That You Will See Soon
             </h1>
-            <p class="text-center">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
             <div class="row">
               
 
@@ -156,8 +154,10 @@ include "./db.php";
                     </h1>
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title font-weight-bold">UNLIMITED RESOURCES</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title font-weight-bold">
+                     UNLIMITED RESOURCES
+                    </h5>
+                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
               </div>
@@ -173,7 +173,7 @@ include "./db.php";
                   </div>
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold">UNLIMITED IDEAS</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
               </div>
@@ -203,9 +203,11 @@ include "./db.php";
     <div class="container-fluid dark-gradient pt-5 pb-5"> 
       <h1 class="text-center text-white">All-access Membership</h1>
       <p class="text-center text-white">Why buy just one course when you can have them ALL?</p>
-      <div class="text-white text-center mx-auto col-lg-3 col-md-3 col-sm-11 purple-gradient py-3">
-        <h1><?php echo $course_count; ?></h1>
-        <h3 class="letter-space-2">Courses</h3>
+      <div class="row">
+        <div class="text-white text-center mx-auto col-lg-3 col-md-3 col-sm-11 purple-gradient py-3">
+          <h1><?php echo $course_count; ?></h1>
+          <h3 class="letter-space-2">Courses</h3>
+        </div>
       </div>
     </div>
     

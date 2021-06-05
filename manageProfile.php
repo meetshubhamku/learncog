@@ -18,7 +18,7 @@ if(!isset($_SESSION['urole']))
 <!-- navbar -->
 <?php include "./navbar.php"; ?>
 
-<div class="container my-3 py-3">
+<div class="container my-5 py-5">
   <h2 class="text-center mt-3 mb-5">  
     <?php echo $_SESSION['uname']; ?>'s Profile
   </h2>

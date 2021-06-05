@@ -29,10 +29,6 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.text-gradient {
-  color: #ff00cc; /* fallback for old browsers */
-}
-
 .dark-gradient {
   background: #31092a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -68,6 +64,19 @@
 .hover-blue:hover {
   background-color: #8260d8;
   border: 1px solid #8260d8;
+}
+
+.bg-grey {
+  background-color: #f5f5f8;
+}
+
+.text-grey {
+  color: #f5f5f8;
+}
+
+.text-hover-red:hover {
+  color: #fc4364;
+  /* border: 1px solid #8260d8; */
 }
 
 .text-red {
