@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2021 at 07:47 PM
+-- Generation Time: Jun 05, 2021 at 04:05 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -49,6 +49,27 @@ INSERT INTO `course_category` (`course_id`, `course_name`, `course_description`)
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `notes`
+--
+
+CREATE TABLE `notes` (
+  `note_id` int(11) NOT NULL,
+  `note_title` varchar(50) NOT NULL,
+  `note_link` varchar(100) NOT NULL,
+  `note_description` varchar(300) DEFAULT NULL,
+  `note_category` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `notes`
+--
+
+INSERT INTO `notes` (`note_id`, `note_title`, `note_link`, `note_description`, `note_category`) VALUES
+(1, 'MTA SQL', 'https://drive.google.com/file/d/13je8A-MBiH4704TvbxeRw_pX8X4AursT/view?usp=sharing', 'MTA SQL handbook. Single book for clearing MTA SQL exam.', 7);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -67,10 +88,11 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_email`, `user_password`, `user_role`, `is_block`) VALUES
 (1, 'Shubham Kumar', 'shubham@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 1, 0),
-(2, 'Neha Joshi', 'neha@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0, 1),
+(2, 'Neha Joshi', 'neha@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0, 0),
 (3, 'Arush Mathew', 'arush@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0, 0),
 (4, 'Kanchan Rajput', 'kanchanrajput11097@gmail.com', '45dc094d13e6e0ee7f8d0e794a318eea', 0, 0),
-(5, 'KANCHAN RAJPUT', 'kanchanrajput@gmail.com', '3b2f1ce2b91267414acd510e4b6a7bdd', 0, 0);
+(5, 'KANCHAN RAJPUT', 'kanchanrajput@gmail.com', '3b2f1ce2b91267414acd510e4b6a7bdd', 0, 0),
+(6, 'Rahul Rajput', 'rahul@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -113,6 +135,12 @@ ALTER TABLE `course_category`
   ADD PRIMARY KEY (`course_id`);
 
 --
+-- Indexes for table `notes`
+--
+ALTER TABLE `notes`
+  ADD PRIMARY KEY (`note_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -136,10 +164,16 @@ ALTER TABLE `course_category`
   MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
+-- AUTO_INCREMENT for table `notes`
+--
+ALTER TABLE `notes`
+  MODIFY `note_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `videos`
