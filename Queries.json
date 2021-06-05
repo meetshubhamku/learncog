@@ -1,0 +1,8 @@
+{
+  "Queries": {
+    "users": "CREATE TABLE users (user_id int PRIMARY KEY AUTO_INCREMENT, user_name varchar(20) NOT Null , user_email varchar(30) UNIQUE NOT NUll, user_password varchar(32) NOT Null, user_role SMALLINT NOT Null DEFAULT 0, is_block tinyint default 0)",
+    "course_category": "create table course_category(course_id int primary key AUTO_INCREMENT, course_name varchar(50) not null, course_description varchar(300))",
+    "videos": "create table videos (video_id int PRIMARY KEY AUTO_INCREMENT, video_title varchar(50) not null, video_link varchar(50) not null, video_description varchar(300), video_category int references course_category(course_id))",
+    "notes": "create table notes (note_id int PRIMARY KEY AUTO_INCREMENT, note_title varchar(50) not null, note_link varchar(100) not null, note_description varchar(300), note_category int references course_category(course_id))"
+  }
+}

@@ -1,0 +1,87 @@
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300); */
+/* @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@250&display=swap"); */
+
+.back {
+  /* background-color: #00b4db; */
+  background-color: #328f8a;
+  /* background-image: linear-gradient(45deg, #328f8a, #08ac4b); */
+
+  font-family: "Heebo", sans-serif;
+}
+
+.form-box {
+  padding: 40px 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.back-gradient {
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8260d8,
+    #f33a67
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8260d8,
+    #f33a67
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-gradient {
+  color: #ff00cc; /* fallback for old browsers */
+}
+
+.dark-gradient {
+  background: #31092a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #31092a,
+    #0f0331
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #31092a,
+    #0f0331
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.purple-gradient {
+  background: #52125d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #52125d,
+    #321858
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #52125d,
+    #321858
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.letter-space-2 {
+  letter-spacing: 2px;
+}
+
+.hover-blue:hover {
+  background-color: #8260d8;
+  border: 1px solid #8260d8;
+}
+
+.text-red {
+  color: #fc4364;
+}
+
+.bg-red {
+  background-color: #fc4364;
+}
+
+.text-blue {
+  color: #8260d8;
+}
+
+.bg-blue {
+  background-color: #8260d8;
+}
