@@ -22,7 +22,10 @@
           <a class="nav-link " href="./index.php">Home</a>
         </li>
         <li class="nav-item mr-1">
-          <a class="nav-link " href="#">Courses</a>
+          <a class="nav-link " href="./courses.php">Courses</a>
+        </li>
+        <li class="nav-item mr-1">
+          <a class="nav-link " href="./contact.php">Contect</a>
         </li>
       <?php 
 

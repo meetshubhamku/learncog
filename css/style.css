@@ -103,3 +103,18 @@
 .bg-blue {
   background-color: #8260d8;
 }
+
+.hoverblue:hover {
+  background-color: #8260d8;
+  color: white;
+  transition: 0.5s ease;
+}
+.hoverred:hover {
+  background-color: #fc4364;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}

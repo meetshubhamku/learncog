@@ -49,7 +49,7 @@
             </button>
           </div>
          
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-5 col-md-5 mx-auto col-sm-12 text-center">
               <p class="text-center my-2">
                 <a class="text-muted" href="./registration.php">Create an account</a>
@@ -60,8 +60,43 @@
                 <a class="text-muted" href="">Forgot Password</a>
               </p>
             </div>
-          </div>
+          </div> -->
         </form>
+
+        <div class="container-fluid d-flex text-muted">
+            <div
+              style="position: relative; height: 100px; width: 50%"
+              class="
+                mr-1
+                d-flex
+                align-items-center
+                justify-content-center
+                hoverblue
+              "
+            >
+              <a
+                class=""
+                style="text-decoration: none; color: inherit"
+                href="./registration.php"
+                >Create an account</a
+              >
+            </div>
+            <div
+              style="position: relative; height: 100px; width: 50%"
+              class="
+                ml-1
+                d-flex
+                align-items-center
+                justify-content-center
+                hoverred
+              "
+            >
+              <a class="" style="text-decoration: none; color: inherit" href=""
+                >Forgot Password</a
+              >
+            </div>
+          </div>
+
       </div>
     </div>
   </div>
