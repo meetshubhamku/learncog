@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light pl-5 pr-5 font-weight-bold">
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light px-5 font-weight-bold py-3">
   <a class="navbar-brand" href="./index.php" style="font-family: Gabriola; font-size:2rem; color:#8260d8;">
     <i class="mr-2"><img src="https://img.icons8.com/material/40/8260d8/machine-learning.png"/></i>
     <span class="text-blue">Learn</span><span class="text-blue">Cog</span>
@@ -16,11 +17,11 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item mr-1 mt-2">
+    <ul class="navbar-nav ml-auto d-flex align-items-center">
+        <li class="nav-item mr-1">
           <a class="nav-link " href="./index.php">Home</a>
         </li>
-        <li class="nav-item mr-1 mt-2">
+        <li class="nav-item mr-1">
           <a class="nav-link " href="#">Courses</a>
         </li>
       <?php 
@@ -71,7 +72,7 @@
         {
         ?>
           <li class="nav-item mr-1">
-            <a class="nav-link btn font-weight-bold bg-red text-white px-3 mt-1" href="./logout.php">Logout</a>
+            <a class="nav-link btn bg-red text-white rounded-pill px-4 pt-3" href="./logout.php">Logout</a>
           </li>
         <?php
         }
@@ -79,7 +80,7 @@
         {
           ?>
           <li class="nav-item mr-1">
-            <a class="nav-link btn bg-red text-white rounded-pill px-3 " href="./login.php">SignIn</a>
+            <a class="nav-link btn bg-red text-white rounded-pill px-4 pt-3" href="./login.php">SignIn</a>
           </li>
         <?php
         }

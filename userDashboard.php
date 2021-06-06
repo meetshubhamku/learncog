@@ -14,7 +14,7 @@ else if($_SESSION['ublock']!=0)
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body class="back" onload="hideLoader();">
+<body class="" onload="hideLoader();">
 
    <!-- Loader -->
    <?php include "./loader.php"; ?>
@@ -23,56 +23,56 @@ else if($_SESSION['ublock']!=0)
   <?php include "./navbar.php"; ?>
 
   <!-- Dashborad section -->
-  <div class="container my-5 ">
-    <h1 class="text-center text-light">Dashboard</h1>
+  <div class="container-fluid px-5 pt-2 mt-5 ">
+    <h1 class="text-center my-5">Dashboard</h1>
 
     <!-- Card Section 1 -->
     <div class="row">
       <!--Video courses -->
       <div class="col-sm-4 my-2">
-        <div class="card">
+        <div class="card bg-blue text-white">
           <div class="card-body">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/video.png"/></i>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/video.png"/></i>
             Video Courses</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./viewVideoCourses.php" class="btn btn-success back">Learn</a>
+            <a href="./viewVideoCourses.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
       <!-- E Books -->
       <div class="col-sm-4 my-2">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body bg-blue text-white">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/book-stack--v1.png"/></i>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/book-stack--v1.png"/></i>
             E-Books</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./manageEbooks.php" class="btn btn-success back">Learn</a>
+            <a href="./manageEbooks.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
       <!-- PHP Playground -->
       <div class="col-sm-4 my-2">
-        <div class="card">
+        <div class="card bg-blue text-white">
           <div class="card-body">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/php.png"/></i>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/php.png"/></i>
             PHP Playground</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./phpPlayground.php" target="_blank" class="btn btn-success back">Learn</a>
+            <a href="./phpPlayground.php" target="_blank" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
       <!--Notes category -->
       <div class="col-sm-4 my-2">
-        <div class="card">
+        <div class="card bg-blue text-white">
           <div class="card-body">
             <h5 class="card-title">
-            <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/task.png"/></i>
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/task.png"/></i>
             Course Notes</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./viewCourseNotes.php" class="btn btn-success back">Learn</a>
+            <a href="./viewCourseNotes.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>

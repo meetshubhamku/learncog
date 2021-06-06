@@ -34,7 +34,7 @@
   if ($result->num_rows > 0) 
     {
       ?>
-      <div class="container">
+      <div class="container-fluid my-5 pt-5 px-5">
         <h2 class="text-center my-4">Available Videos</h2>
         <div class="row">
         <?php
@@ -45,8 +45,8 @@
                 <div class="card">
                   <iframe class="embed-responsive-item" src="<?php echo $row['video_link']; ?>" allowfullscreen></iframe>
                   <div class="card-body">
-                    <h5 class="card-title"><?php echo $row['video_title']; ?></h5>
-                    <p class="card-text"><?php echo $row['video_description']; ?></p>
+                    <h5 class="card-title"> <?php echo $row['video_title']; ?> </h5>
+                    <p class="card-text text-muted"><?php echo $row['video_description']; ?></p>
                   </div>
                 </div>
               </div>

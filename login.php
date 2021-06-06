@@ -44,7 +44,7 @@
           </div>
           
           <div class="form-group text-center mt-5">
-            <button name="login" type="submit" class="btn rounded-pill bg-red text-white px-4 py-2">
+            <button name="login" type="submit" class="btn rounded-pill bg-red text-white px-4 pt-3">
                 Log In
             </button>
           </div>

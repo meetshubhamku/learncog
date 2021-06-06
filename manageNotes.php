@@ -24,8 +24,8 @@ else
   <!-- navbar -->
   <?php include "./navbar.php" ?>
 
-  <div class="container py-5 ">
-    <h2 class="text-center my-3">Notes Management</h2>
+  <div class="container py-5 mt-5">
+    <h2 class="text-center mt-3 mb-5">Notes Management</h2>
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
@@ -72,7 +72,7 @@ else
                 <textarea name="notesDescription" class="form-control" name="categoryDescription" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <small id="descHelp" class="form-text text-muted">Provide a small description.</small>
               </div>
-              <button name="addNotes" type="submit" class="btn btn-primary">Submit</button>
+              <button name="addNotes" type="submit" class="btn bg-red text-white">Submit</button>
             </form>
           </div>
           <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">

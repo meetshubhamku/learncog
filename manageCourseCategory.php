@@ -23,8 +23,8 @@ else
   <!-- navbar -->
   <?php include "./navbar.php" ?>
 
-  <div class="container py-5 ">
-    <h2 class="text-center">Course Categories</h2>
+  <div class="container py-5 mt-5 ">
+    <h2 class="text-center my-5">Course Categories</h2>
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
@@ -47,7 +47,7 @@ else
                 <textarea class="form-control" name="categoryDescription" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <small id="descHelp" class="form-text text-muted">Provide a small description.</small>
               </div>
-              <button type="submit" name="addvideocategory" class="btn btn-primary">Submit</button>
+              <button type="submit" name="addvideocategory" class="btn bg-red pt-3 px-3 text-white">Submit</button>
             </form>
           </div>
           <!-- update section -->
@@ -81,7 +81,7 @@ else
                 <textarea class="form-control" name="categoryDescription" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <small id="descHelp" class="form-text text-muted">Provide a small description.</small>
               </div>
-              <button type="submit" name="updatecoursecategory" class="btn btn-primary">Submit</button>
+              <button type="submit" name="updatecoursecategory" class="btn bg-red pt-3 px-3 text-white">Submit</button>
             </form>
           </div>
         </div>

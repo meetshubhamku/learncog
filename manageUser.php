@@ -19,9 +19,9 @@ else
 <body>
 <?php include "./navbar.php"; ?>
 
-<div class="container">
-  <h2 class="text-center mt-4">User Management</h2>
-  <h6 class="text-center mt-1 mb-4">Order By User Name</h6>
+<div class="container-fluid mt-5 pt-3">
+  <h2 class="text-center mt-5">User Management</h2>
+  <h6 class="text-center mt-1 mb-4 text-muted">Order By User Name</h6>
   <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -57,7 +57,7 @@ else
                   <?php
                     if($row['is_block']==0){
                       ?>  
-                        <a style="min-width: 8.5rem;" href="./userAuth.php?user_id=<?php echo $row['user_id']; ?>&type=block" class="btn font-weight-bold btn-danger text-left">
+                        <a style="min-width: 8.5rem;" href="./userAuth.php?user_id=<?php echo $row['user_id']; ?>&type=block" class="btn btn-danger font-weight-bold text-left">
                           <i class="mr-1"><img src="https://img.icons8.com/material/24/ffffff/lock.png"/></i>
                           Block
                         </a>

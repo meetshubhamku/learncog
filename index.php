@@ -29,32 +29,30 @@ include "./db.php";
     <!-- Navbar End -->
 
     <!-- Landing section -->
-    <div class="container-fluid pt-5 back-gradient">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col lg-6 col-md-6 col-sm-12 text-white py-5 px-5 d-flex flex-column justify-content-center">
+    <div class="container-fluid px-5 mt-5 pt-5 back-gradient">
+      <div class="row">
+        <div class="col lg-6 col-md-6 col-sm-12 text-white py-5 px-5 d-flex flex-column justify-content-center">
+          <div>
+            <h6 style="font-size: 2rem;">Online Learning</h6>
+            <h1 style="font-size: 4rem;" class="mb-2 ">Learn <strong class="text-white">Everyday</strong></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur? Perspiciatis delectus, facilis quidem doloribus culpa explicabo repellendus, quaerat ullam quod provident suscipit necessitatibus nihil voluptas doloremque mollitia dolorum quas.</p>
             <div>
-              <h6 style="font-size: 2rem;">Online Learning</h6>
-              <h1 style="font-size: 4rem;" class="mb-4 ">Learn <strong class="text-white">Everyday</strong></h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur? Perspiciatis delectus, facilis quidem doloribus culpa explicabo repellendus, quaerat ullam quod provident suscipit necessitatibus nihil voluptas doloremque mollitia dolorum quas.</p>
-              <div>
-                <a class="btn btn-success py-2 pl-5 pr-5 font-weight-bold bg-red hover-blue" href="./registration.php">Get Started</a>
-              </div>
+              <a class="btn text-white pt-3 px-4 font-weight-bold bg-red hover-blue" href="./registration.php">Get Started</a>
             </div>
           </div>
-          <div class="col lg-6 col-md-6 col-sm-12 pt-5 px-5 text-white">
-            <!-- <img src="./assets/home.png" class="img-fluid" alt="Responsive image"> -->
-            <img src="./assets/home2.png" class="img-fluid" alt="Responsive image">
-          </div>
+        </div>
+        <div class="col lg-6 col-md-6 col-sm-12 pt-5 px-5 text-white d-none d-md-block">
+          <!-- <img src="./assets/home.png" class="img-fluid" alt="Responsive image"> -->
+          <img src="./assets/home2.png" class="img-fluid" alt="Responsive image">
         </div>
       </div>
     </div>  
 
     <!-- Join Section -->
-    <div class="container-fluid pt-5 " >
+    <div class="container-fluid pt-5" >
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 py-5 px-5 text-white order-1">
+          <div class="col-lg-6 col-md-6 col-sm-12 py-5 px-5 text-white order-1 d-none d-md-block">
             <img src="./assets/join.png" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-dark order-sm-1 d-flex flex-column justify-content-center">
@@ -62,7 +60,7 @@ include "./db.php";
             <h1 style="font-size: 4rem;" class="mb-4">Join Online Courses <strong class="text-red">Today</strong></h1>
             <p>Etiam velit purus, vehicula quis imperdiet dignissim, convallis vitae nisl. Nullam facilisi. Pellentesque non pulvinar justo. Nullam eget neque ut tellus ornare ullamcorper ulla ambco mattis for nulla glavrida egesed!</p>
             <div>
-              <a class="btn bg-red text-white py-2 pl-5 pr-5 font-weight-bold" href="#">READ MORE</a>
+              <a class="btn bg-red text-white pt-3 px-5 font-weight-bold" href="#">READ MORE</a>
             </div>
           </div>
         </div>  
@@ -76,7 +74,7 @@ include "./db.php";
       <div class="container mt-5 pt-2">
 
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-12 mx-auto order-1 text-lg-right d-flex flex-column justify-content-center">
+          <div class="col-lg-5 col-md-5 col-sm-12 mx-auto order-1 text-lg-right d-flex flex-column justify-content-center ">
             <h6 class="text-red">STEP-BY-STEP LESSONS</h6>
             <h4 class="font-weight-bold">Simple and Beginner friendly</h4>
             <p class="text-muted">Time and time again, Mosh's students praise his ability to break down complex topics into simple, digestible lessons that anyone can understand.</p>
@@ -132,6 +130,18 @@ include "./db.php";
       </div>
     </div>
 
+    <!-- Subscription section -->
+    <div class="container-fluid dark-gradient my-4 pt-5 pb-5"> 
+      <h1 class="text-center text-white">All-access Membership</h1>
+      <p class="text-center text-white">Why buy just one course when you can have them ALL?</p>
+      <div class="row">
+        <div class="text-white text-center mx-auto col-lg-3 col-md-3 col-sm-5 purple-gradient pt-4" style="width: 50%;">
+          <h1><?php echo $course_count; ?></h1>
+          <h3 class="letter-space-2">Courses</h3>
+        </div>
+      </div>
+    </div>
+
     <!-- Future section -->
     <div class="container-fluid bg-white">
       <div class="container pt-5 ">
@@ -147,8 +157,8 @@ include "./db.php";
               <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
                 <div class="card text-center" style="border: none;">
                   
-                  <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center bg-blue" 
-                    style="height: 170px; width:170px;">
+                  <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center" 
+                    style="height: 170px; width:170px; background-color:#9102d0;">
                     <h1>
                       <img src="https://img.icons8.com/material/70/ffffff/here.png"/>
                     </h1>
@@ -165,8 +175,8 @@ include "./db.php";
               <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
                 <div class="card text-center" style="border: none;">
                   <!-- <img src="./assets/home.png" class="card-img-top rounded-circle" alt="..."> -->
-                  <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center bg-blue" 
-                    style="height: 170px; width:170px; ">
+                  <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center" 
+                    style="height: 170px; width:170px; background-color:#9102d0; ">
                     <h1>
                       <img src="https://img.icons8.com/material/70/ffffff/infinity--v1.png"/>
                     </h1>
@@ -181,8 +191,8 @@ include "./db.php";
               <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
                 <div class="card text-center" style="border: none;">
                   <!-- <img src="./assets/home.png" class="card-img-top rounded-circle" alt="..."> -->
-                  <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center bg-blue" 
-                    style="height: 170px; width:170px;">
+                  <div class="card-img-top rounded-circle align-self-center d-flex justify-content-center align-items-center" 
+                    style="height: 170px; width:170px; background-color:#9102d0;">
                     <h1>
                       <img src="https://img.icons8.com/material/70/ffffff/personal-growth.png"/>
                     </h1>
@@ -198,19 +208,6 @@ include "./db.php";
         </div>
       </div>
     </div>
-
-    <!-- Subscription section -->
-    <div class="container-fluid dark-gradient pt-5 pb-5"> 
-      <h1 class="text-center text-white">All-access Membership</h1>
-      <p class="text-center text-white">Why buy just one course when you can have them ALL?</p>
-      <div class="row">
-        <div class="text-white text-center mx-auto col-lg-3 col-md-3 col-sm-11 purple-gradient py-3">
-          <h1><?php echo $course_count; ?></h1>
-          <h3 class="letter-space-2">Courses</h3>
-        </div>
-      </div>
-    </div>
-    
 
     <?php include "./footer.php"; ?>
   </body>

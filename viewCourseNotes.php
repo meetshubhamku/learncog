@@ -20,15 +20,15 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body class=" back" onload="hideLoader();">
+<body class="" onload="hideLoader();">
 
  <!-- Loader -->
  <?php include "./loader.php"; ?>
 
  <!-- navbar -->
 <?php include "./navbar.php"; ?>
-<div class="container my-5">
-    <h1 class="text-center font-weight-bold text-light">Available Courses</h1>
+  <div class="container-fluid my-5 px-5 pt-5">
+    <h1 class="text-center font-weight-bold mt-3">Available Courses</h1>
     <!-- Card Section 1 -->
     <div class="row">
     <?php 
@@ -39,16 +39,16 @@ else
         {
           ?>
             <div class="col-sm-4 my-2">
-              <div class="card" style="border: 1px solid black;">
+              <div class="card bg-blue text-white">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <i class="pr-2"><img src="https://img.icons8.com/material/24/000000/task.png"/></i>
+                    <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/task.png"/></i>
                     <?php echo $row['course_name']; ?>
                   </h5>
                   <p class="card-text"><?php echo $row['course_description']; ?></p>
                   <form action="./viewNotes.php" method="POST">
                     <input type="hidden" name="courseId" value="<?php echo $row['course_id']; ?>" />
-                    <button class="btn btn-primary back">Start</button>
+                    <button class="btn bg-red letter-space-2 pt-3 px-3 text-white">Start</button>
                   </form>
                 </div>
               </div>

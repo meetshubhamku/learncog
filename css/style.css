@@ -1,12 +1,6 @@
-/* @import url(https://fonts.googleapis.com/css?family=Roboto:300); */
-/* @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@250&display=swap"); */
-
-.back {
-  /* background-color: #00b4db; */
-  background-color: #328f8a;
-  /* background-image: linear-gradient(45deg, #328f8a, #08ac4b); */
-
-  font-family: "Heebo", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+* {
+  font-family: "Baloo Tammudu 2", cursive;
 }
 
 .form-box {
@@ -16,31 +10,24 @@
 }
 
 .back-gradient {
-  background: #ff00cc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #8260d8,
-    #f33a67
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8260d8,
-    #f33a67
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(36, 9, 119) 0%,
+    rgb(36, 9, 119) 48%,
+    rgb(72, 7, 149) 48%,
+    rgb(72, 7, 149) 53%,
+    rgb(109, 5, 178) 53%,
+    rgb(109, 5, 178) 56%,
+    rgb(145, 2, 208) 56%,
+    rgb(145, 2, 208) 69%,
+    rgb(181, 0, 237) 69%,
+    rgb(181, 0, 237) 100%
+  );
 }
 
 .dark-gradient {
-  background: #31092a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #31092a,
-    #0f0331
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #31092a,
-    #0f0331
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #31092a, #0f0331);
+  background: linear-gradient(to right, #31092a, #0f0331);
 }
 
 .purple-gradient {
