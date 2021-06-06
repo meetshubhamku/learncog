@@ -12,7 +12,7 @@ else if($_SESSION['ublock']!=0)
 else
 {
   include "./db.php";
-  $sql = "select * from course_category order by course_name";
+  $sql = "select * from course_category where course_id in (select DISTINCT video_category from videos) order by course_name";
   $result = $conn->query($sql);
 }
 ?>
@@ -48,7 +48,7 @@ else
                   <p class="card-text"><?php echo $row['course_description']; ?></p>
                   <form action="./viewVideo.php" method="POST">
                     <input type="hidden" name="courseId" value="<?php echo $row['course_id']; ?>" />
-                    <button href="./viewVideoCourses.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Start</button>
+                    <button href="./viewVideoCourses.php" class="btn bg-red letter-space-2 px-3 text-white">Start</button>
                   </form>
                 </div>
               </div>

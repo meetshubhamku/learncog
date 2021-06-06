@@ -72,7 +72,7 @@ else
                 <textarea name="videoDescription" class="form-control" name="categoryDescription" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <small id="descHelp" class="form-text text-muted">Provide a small description.</small>
               </div>
-              <button name="addVideo" type="submit" class="btn bg-red pt-3 px-3 text-white">Submit</button>
+              <button name="addVideo" type="submit" class="btn bg-red px-3 text-white">Submit</button>
             </form>
           </div>
           <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">

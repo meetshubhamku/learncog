@@ -36,7 +36,7 @@ else if($_SESSION['ublock']!=0)
             <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/video.png"/></i>
             Video Courses</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./viewVideoCourses.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
+            <a href="./viewVideoCourses.php" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ else if($_SESSION['ublock']!=0)
             <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/book-stack--v1.png"/></i>
             E-Books</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./manageEbooks.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
+            <a href="./manageEbooks.php" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ else if($_SESSION['ublock']!=0)
             <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/php.png"/></i>
             PHP Playground</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./phpPlayground.php" target="_blank" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
+            <a href="./phpPlayground.php" target="_blank" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ else if($_SESSION['ublock']!=0)
             <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/task.png"/></i>
             Course Notes</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./viewCourseNotes.php" class="btn bg-red letter-space-2 pt-3 px-3 text-white">Learn</a>
+            <a href="./viewCourseNotes.php" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>

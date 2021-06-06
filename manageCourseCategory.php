@@ -47,7 +47,7 @@ else
                 <textarea class="form-control" name="categoryDescription" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <small id="descHelp" class="form-text text-muted">Provide a small description.</small>
               </div>
-              <button type="submit" name="addvideocategory" class="btn bg-red pt-3 px-3 text-white">Submit</button>
+              <button type="submit" name="addvideocategory" class="btn bg-red px-3 text-white">Submit</button>
             </form>
           </div>
           <!-- update section -->
@@ -81,7 +81,7 @@ else
                 <textarea class="form-control" name="categoryDescription" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <small id="descHelp" class="form-text text-muted">Provide a small description.</small>
               </div>
-              <button type="submit" name="updatecoursecategory" class="btn bg-red pt-3 px-3 text-white">Submit</button>
+              <button type="submit" name="updatecoursecategory" class="btn bg-red px-3 text-white">Submit</button>
             </form>
           </div>
         </div>
