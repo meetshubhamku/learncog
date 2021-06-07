@@ -94,7 +94,7 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
             <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/google-blog-search.png"/></i>
             Blog Management</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./manageNotes.php" class="btn bg-red px-3 text-white">Manage</a>
+            <a href="./manageBlogs.php" class="btn bg-red px-3 text-white">Manage</a>
           </div>
         </div>
       </div>

@@ -76,6 +76,18 @@ else if($_SESSION['ublock']!=0)
           </div>
         </div>
       </div>
+      <!-- BLog Category -->
+      <div class="col-sm-4 my-2">
+        <div class="card bg-blue text-white">
+          <div class="card-body">
+            <h5 class="card-title">
+            <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/blogloving.png"/></i>
+            Blogs</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
+            <a href="./viewBlogs.php" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   
