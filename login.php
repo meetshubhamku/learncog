@@ -11,6 +11,7 @@
       <div class="col-lg-5 col-md-5 col-sm-10 my-5 px-5  mx-auto form-box">
         <form method="POST" action="./performLogin.php">
           <div class="mb-4">
+          <p class="text-center"><img src="https://img.icons8.com/material/40/8260d8/machine-learning.png"/></p>
             <h5 class="text-center my-1 text-muted">Log in to LearnCog</h5>
           </div>
           
