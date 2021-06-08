@@ -22,7 +22,7 @@ else
     return $date;
   }
   include "./db.php";
-  $sql = "select * from blogs";
+  $sql = "select * from blogs order by blog_time DESC";
   $result = $conn->query($sql);
 }
 ?>
