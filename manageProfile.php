@@ -18,10 +18,12 @@ if(!isset($_SESSION['urole']))
 <!-- navbar -->
 <?php include "./navbar.php"; ?>
 
-<div class="container my-5 py-5">
-  <h2 class="text-center mt-3 mb-5">  
-    <?php echo $_SESSION['uname']; ?>'s Profile
-  </h2>
+<div class="jumbotron back-gradient pt-5 mt-5">
+  <h1 class="mt-4 text-white text-center">  <?php echo $_SESSION['uname']; ?>'s Profile </h1>
+  <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+</div>
+
+<div class="container-fluid py-4 px-5">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 text-center">
       <img  style="height: 200px; width:200px; border:none;" 

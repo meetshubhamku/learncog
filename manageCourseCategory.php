@@ -23,8 +23,13 @@ else
   <!-- navbar -->
   <?php include "./navbar.php" ?>
 
-  <div class="container py-5 mt-5 ">
-    <h2 class="text-center my-5">Course Categories</h2>
+  <!-- banner -->
+  <div class="jumbotron back-gradient pt-5 mt-5">
+    <h1 class="mt-4 text-white text-center"> Course Category </h1>
+    <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+  </div>
+
+  <div class="container-fluid py-4 px-5">
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">

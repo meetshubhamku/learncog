@@ -13,7 +13,7 @@
     <?php include "./loader.php"; ?>
     <!-- Navbar -->
     <?php include "./navbar.php"; ?>
-    <!-- deta -->
+    <!-- data -->
     <div class="jumbotron back-gradient pt-5 mt-5">
       <h1 class="mt-4 text-white text-center">Courses</h1>
       <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>

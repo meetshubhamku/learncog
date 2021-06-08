@@ -4,6 +4,6 @@
     "course_category": "create table course_category(course_id int primary key AUTO_INCREMENT, course_name varchar(50) not null, course_description varchar(300))",
     "videos": "create table videos (video_id int PRIMARY KEY AUTO_INCREMENT, video_title varchar(50) not null, video_link varchar(50) not null, video_description varchar(300), video_category int references course_category(course_id))",
     "notes": "create table notes (note_id int PRIMARY KEY AUTO_INCREMENT, note_title varchar(50) not null, note_link varchar(100) not null, note_description varchar(300), note_category int references course_category(course_id))",
-    "blogs": "create table blogs (blog_id int AUTO_INCREMENT primary KEY, blog_title varchar(100) not null, blog_description LONGTEXT not null, blog_category int references course_category(course_id))"
+    "blogs": "create table blogs (blog_id int AUTO_INCREMENT primary KEY, blog_title varchar(100) not null, blog_short_description varchar(500) not null, blog_long_description LONGTEXT not null, blog_category int references course_category(course_id), blog_time date DEFAULT CURRENT_DATE)"
   }
 }

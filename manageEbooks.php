@@ -18,9 +18,14 @@ if(!isset($_SESSION['urole']))
   <!-- navbar -->
 <?php include "./navbar.php"; ?>
 
-<div class="container-fluid px-5 my-5 pt-4">
+<!-- Banner -->
+<div class="jumbotron back-gradient pt-5 mt-5">
+  <h1 class="mt-4 text-white text-center"> E-books </h1>
+  <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+</div>
+
+<div class="container-fluid px-5 py-3">
   <div id="title" class="center">
-    <h2 id="header" class="text-center mt-5">E-Book Search</h2>
     <div class="row">
       <div id="input" class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
         <input id="search-box" type="text" class="form-control mx-3" placeholder="Search Books!...">

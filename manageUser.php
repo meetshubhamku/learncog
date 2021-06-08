@@ -16,12 +16,22 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <?php include "./head.php"; ?>
-<body>
+<body onload="hideLoader();" class="bg-grey">
+
+ <!-- Loader -->
+ <?php include "./loader.php"; ?>
+
+<!-- Navbar -->
 <?php include "./navbar.php"; ?>
 
-<div class="container-fluid mt-5 pt-3">
-  <h2 class="text-center mt-5">User Management</h2>
-  <h6 class="text-center mt-1 mb-4 text-muted">Order By User Name</h6>
+<!-- banner -->
+<div class="jumbotron back-gradient pt-5 mt-5">
+  <h1 class="mt-4 text-white text-center"> User Management </h1>
+  <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+</div>
+
+<div class="container-fluid py-4 px-5">
+  <h6 class="text-center text-muted">Order By User Name</h6>
   <table class="table">
     <thead class="thead-dark">
       <tr>

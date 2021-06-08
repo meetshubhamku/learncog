@@ -16,7 +16,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
   <?php include "./head.php" ?>
-<body onload="hideLoader();">
+<body onload="hideLoader();" class="bg-grey">
 
   <!-- Loader -->
   <?php include "./loader.php"; ?>
@@ -24,8 +24,13 @@ else
   <!-- navbar -->
   <?php include "./navbar.php" ?>
 
-  <div class="container py-5 mt-5">
-    <h2 class="text-center mt-3 mb-5">Notes Management</h2>
+  <!-- banner -->
+  <div class="jumbotron back-gradient pt-5 mt-5">
+    <h1 class="mt-4 text-white text-center"> Manage Notes </h1>
+    <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+  </div>
+
+  <div class="container px-5 py-4">
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">

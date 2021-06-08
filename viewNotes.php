@@ -27,15 +27,21 @@
   <!-- Loader -->
   <?php include "./loader.php"; ?>
 
-
+  <!-- Navbar -->
   <?php include "./navbar.php"; ?>
+
+  <!-- Banner -->
+  <div class="jumbotron back-gradient pt-5 mt-5">
+    <h1 class="mt-4 text-white text-center"> Notes </h1>
+    <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+  </div>
   
   <?php
   if ($result->num_rows > 0) 
     {
       ?>
-      <div class="container-fluid my-5 pt-4 px-5">
-        <h2 class="text-center mt-5 font-weight-bold">Available Notes</h2>
+      <div class="container-fluid py-3 px-5">
+  
         <div class="row">
         <?php
         while($row = $result->fetch_assoc()) 

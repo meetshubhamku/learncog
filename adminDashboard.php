@@ -18,10 +18,15 @@ if(!isset($_SESSION['urole']) || $_SESSION['urole']!=1)
   <!-- navbar -->
   <?php include "./navbar.php"; ?>
   
-  <div class="container-fluid mt-5 py-5 px-5">
-    <h1 class="pl-1 mt-5 text-center">Dashboard</h1>
+  <!-- banner -->
+  <div class="jumbotron back-gradient pt-5 mt-5">
+    <h1 class="mt-4 text-white text-center"> Dashboard </h1>
+    <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+  </div>
+
+  <div class="container-fluid py-4 px-5">
     <!-- Card Section 1 -->
-    <div class="row mt-4">
+    <div class="row">
       <!--Course Category -->
       <div class="col-sm-4 my-2 ">
         <div class="card bg-blue text-white">

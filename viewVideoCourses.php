@@ -27,8 +27,12 @@ else
 
  <!-- navbar -->
 <?php include "./navbar.php"; ?>
-<div class="container-fluid my-5 pt-5 px-5">
-    <h1 class="text-center font-weight-bold letter-space-2">Video Courses</h1>
+<!-- Banner -->
+<div class="jumbotron back-gradient pt-5 mt-5">
+  <h1 class="mt-4 text-white text-center"> Video Courses </h1>
+  <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+</div>
+<div class="container-fluid py-3 px-5">
     <!-- Card Section 1 -->
     <div class="row">
     <?php 

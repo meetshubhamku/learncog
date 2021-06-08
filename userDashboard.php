@@ -22,10 +22,14 @@ else if($_SESSION['ublock']!=0)
   <!-- Navbar Section -->
   <?php include "./navbar.php"; ?>
 
-  <!-- Dashborad section -->
-  <div class="container-fluid px-5 pt-2 mt-5 ">
-    <h1 class="text-center my-5">Dashboard</h1>
+  <!-- Banner -->
+  <div class="jumbotron back-gradient pt-5 mt-5">
+    <h1 class="mt-4 text-white text-center"> Dashboard </h1>
+    <p class="text-center text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolorum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, soluta?</p>
+  </div>
 
+  <!-- Dashborad section -->
+  <div class="container-fluid px-5 py-2 ">
     <!-- Card Section 1 -->
     <div class="row">
       <!--Video courses -->
@@ -84,7 +88,7 @@ else if($_SESSION['ublock']!=0)
             <i class="pr-2"><img src="https://img.icons8.com/material/24/ffffff/blogloving.png"/></i>
             Blogs</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero.</p>
-            <a href="./viewBlogs.php" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
+            <a href="./allBlogs.php" class="btn bg-red letter-space-2 px-3 text-white">Learn</a>
           </div>
         </div>
       </div>
