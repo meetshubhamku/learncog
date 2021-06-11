@@ -54,7 +54,7 @@ include "./db.php";
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 py-5 px-5 text-white order-1 d-none d-md-block">
-            <img src="./assets/join.png" class="img-fluid" alt="Responsive image">
+            <img src="./assets/flat.png" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col lg-6 col-md-6 col-sm-12 py-5 px-5 text-dark order-sm-1 d-flex flex-column justify-content-center">
             <h6 style="font-size: 2rem;">Get access to high quality learning!</h6>
