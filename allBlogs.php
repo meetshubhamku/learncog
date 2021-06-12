@@ -21,6 +21,12 @@ else
     $date = $monthArray[$str[1]]." ".$str[2].", ".$str[0];
     return $date;
   }
+  function random_back()
+  {
+    $back = array("back.png", "back2.png", "back3.png", "back4.png", "back5.png");
+    $back = $back[array_rand($back)];
+    return $back;
+  }
   include "./db.php";
   $sql = "select * from blogs order by blog_time DESC";
   $result = $conn->query($sql);
@@ -47,20 +53,21 @@ else
       {
         while($row = $result->fetch_assoc()) 
         {
+          $back = random_back();
           ?>
           <div class="col-sm-4 my-2 ">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title text-blue"><?php echo $row['blog_title']; ?></h5>
-                <!-- <p class="card-text"><?php echo $row['blog_title']; ?></p> -->
+            <div class="card text-white border-round back-shadow">
+              <img src="./assets/<?php echo $back; ?>" class="card-img border-round" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title"><?php echo $row['blog_title']; ?></h5>
                 <p class="card-text"><?php echo $row['blog_short_description']; ?></p>
                 <p class="card-text">
-                  <i class="mr-1"><img src="https://img.icons8.com/material/24/000000/planner--v1.png"/></i>
+                  <i class="mr-1"><img src="https://img.icons8.com/material/24/ffffff/planner--v1.png"/></i>
                   <?php echo FormatDate($row['blog_time']); ?>
                 </p>
                 <a href="./viewBlog.php?blogid=<?php echo $row['blog_id']; ?>" class="btn bg-red letter-space-2 px-3 text-white">Read</a>
               </div>
-            </div>  
+            </div>
           </div>
           <?php
         }
